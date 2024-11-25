@@ -48,9 +48,21 @@ public class NestedLoops {
     public static void printChessBoard(int boardSize) {
         for (int i = 1; i <= boardSize; i++) {
             for (int j = 1; j <= boardSize; j++) {
-                System.out.print("#");
-                if (boardSize == j) System.out.println();
+               if (i % 2 != 0) {
+                   if (j % 2 != 0) {
+                       System.out.print("#");
+                   } else {
+                       System.out.print(".");
+                   }
+               } else {
+                   if (j % 2 == 0) {
+                       System.out.print("#");
+                   } else {
+                       System.out.print(".");
+                   }
+               }
             }
+            System.out.println();
         }
     }
 }
