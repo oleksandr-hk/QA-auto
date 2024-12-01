@@ -1,4 +1,4 @@
-package lesson3;
+package lesson3.student;
 
 import java.util.Objects;
 
