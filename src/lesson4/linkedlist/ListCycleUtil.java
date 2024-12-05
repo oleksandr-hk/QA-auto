@@ -1,4 +1,4 @@
-package lesson4.linkedlistcycle;
+package lesson4.linkedlist;
 
 import java.util.HashSet;
 import java.util.Set;

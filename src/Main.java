@@ -1,11 +1,22 @@
-import lesson2.Basic;
-import lesson2.ForLoop;
-import lesson2.NestedLoops;
+import lesson4.linkedlist.LinkedListReverseUtil;
+import lesson4.linkedlist.ListNode;
+import lesson4.string.StringUtil;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       Basic.swap(5, 10);
+        ListNode<Integer> firstNode = new ListNode<Integer>(1);
+        ListNode<Integer> secondNode = new ListNode<Integer>(2);
+        ListNode<Integer> thirdNode = new ListNode<Integer>(3);
+        ListNode<Integer> fourthNode = new ListNode<Integer>(4);
+        ListNode<Integer> fifthNode = new ListNode<Integer>(5);
+
+        firstNode.setNext(secondNode);
+        secondNode.setNext(thirdNode);
+        thirdNode.setNext(fourthNode);
+        fourthNode.setNext(fifthNode);
+
+        LinkedListReverseUtil.reverseLinkedList(firstNode);
+
+
     }
 }

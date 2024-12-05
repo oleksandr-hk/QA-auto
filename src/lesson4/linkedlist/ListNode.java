@@ -1,4 +1,4 @@
-package lesson4.linkedlistcycle;
+package lesson4.linkedlist;
 
 public class ListNode <T> {
     private T value;
